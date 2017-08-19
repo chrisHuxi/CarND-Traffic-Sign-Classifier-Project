@@ -64,16 +64,7 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 As a last step, I normalized the image data because it seems useful.
 
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
+besides, I decided to generate additional data, more detailly, with rotation I got more data but when I use them to train my model, the result achieve lower performance. As result I didn't apply this approche in my project. After submition I will try other way to generate data and train model again.
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
