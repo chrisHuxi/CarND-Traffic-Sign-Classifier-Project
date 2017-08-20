@@ -49,7 +49,7 @@ signs data set, such as numpy.shape():
 Here is an exploratory visualization of the data set. In the template there is a bar chart, but in my view a pie chart is a better choice, because it can show how much percentage each class occupy more detailly. As you can see, nearly each class take up similar scale(1%-5%), there are no classes having especially more images. So I think it's not necessary to solve imbalance problem. It is similar for valid set and test set.
 
 
-<div align=center>![alt text][image4]</div>
+<center>![alt text][image4]</center>
 <div align=center>![alt text][image5]</div>
 <div align=center>![alt text][image3]</div>
 
