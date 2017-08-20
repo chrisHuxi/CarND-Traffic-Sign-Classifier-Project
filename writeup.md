@@ -129,7 +129,7 @@ Here are the results of the prediction:
 | caution     			| caution 										|
 | 50 km/h					| End of speed limit (80km/h)										|
 | 120 km/h	      		| double curve					 				|
-| road work			| Slippery Road      							|
+| road work			|  road work      							|
 | Stop sign			| Stop sign      							|
 
 
@@ -140,15 +140,18 @@ The model was able to correctly guess 4 of the 6 traffic signs, which gives an a
 The code for making predictions on my final model is located in the 20th cell of the Ipython notebook.
 
 For the first image, the model is relatively sure that this is a Bumpy	road sign (probability of almost 1.0), and the image does contain a Bumpy	road sign. The top five soft max probabilities were
-| Probability         	|     Prediction	        					| 
+
+| Probability	|Prediction	| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00000000e+00         			| 	22,Bumpy	road							| 
-| 1.29787023e-27    				| 28,Children	crossing   |
-| 4.53688143e-33					| 31,Wild	animals	crossing											|
-| 1.96769904e-37	      			| 20,Dangerous	curve	to	the	right			|
-| 2.09718608e-38				    | 25,Road	work      							|
+| 1.00000000e+00|22,Bumpy	road| 
+| 1.29787023e-27|28,Children	crossing|
+| 4.53688143e-33|31,Wild	animals	crossing|
+| 1.96769904e-37|20,Dangerous	curve	to	the	right|
+| 2.09718608e-38|25,Road	work|
+
 
 For the second image, the top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| 	18,General	caution							| 
@@ -158,6 +161,7 @@ For the second image, the top five soft max probabilities were
 | 1.52826764e-12				    | 5,Speed	limit	(80km/h)    							|
 
 For the thrid image, the top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 5.79330266e-01         			| 	23,Slippery	road						| 
@@ -165,9 +169,11 @@ For the thrid image, the top five soft max probabilities were
 | 1.23237120e-02					| 20,Dangerous	curve	to	the	right										|
 | 2.78520002e-03      			| 30,Beware	of	ice/snow			|
 | 1.94263062e-03				    | 10,No	passing	for	vehicles	over	3.5	metric	tons    							|
+
 This image was classified by mistake, as you can see in list, our model was also not very sure which class to choose.
 
 For the fourth image, the top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| 	6,End	of	speed	limit	(80km/h)						| 
@@ -175,9 +181,11 @@ For the fourth image, the top five soft max probabilities were
 | 2.07055906e-09					| 1,Speed	limit	(30km/h)										|
 | 5.12363485e-10      			| 5,Speed	limit	(80km/h)			|
 | 6.86260038e-15				    | 2,Speed	limit	(50km/h)   							|
+
 This image was also classified by mistake, but unlike the thrid image, our model said it was sure this image is "End	of	speed	limit	(80km/h)", but unlucky, it are not. Another point should to be noticed, is the top five result are all about speed	limit, and this image is actul speed	limit. So it makes sense, even it mistakes.
 
 For the fifth image, the top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 6.28746271e-01         			| 	25,Road	work						| 
@@ -186,10 +194,8 @@ For the fifth image, the top five soft max probabilities were
 | 4.30265777e-02      			| 29,Bicycles	crossing			|
 | 1.14517119e-02				    | 24,Road	narrows	on	the	right   							|
 
-14, 38, 34, 13, 20
-1.00000000e+00,   1.14233883e-11,   7.49400755e-21,
-          4.40621793e-23,   3.18760548e-25
 For the sixth image, the top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| 	14,Stop						| 
