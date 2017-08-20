@@ -117,7 +117,7 @@ Here are six German traffic signs that I found on the web:
 ![alt text][image11]
 
 The "limit 120" image might be difficult to classify because in this image there are some noise, such as lane and another 
-signage, I guess they will influence the final result. For similar reason, I think road work is also a little hard to be recognized.
+signage, I guess they will influence the final result. For similar reason, I think "road work" is also a little hard to be recognized.
 
 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -125,32 +125,78 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Bumpy Road      		| Stop sign   									| 
-| caution     			| U-turn 										|
-| 50 km/h					| Yield											|
-| 120 km/h	      		| Bumpy Road					 				|
+| Bumpy Road      		| Bumpy Road   									| 
+| caution     			| caution 										|
+| 50 km/h					| End of speed limit (80km/h)										|
+| 120 km/h	      		| double curve					 				|
 | road work			| Slippery Road      							|
-| Stop sign			| Slippery Road      							|
+| Stop sign			| Stop sign      							|
 
 
-The model was able to correctly guess 4 of the 6 traffic signs, which gives an accuracy of 66.7%. comparing with test result, it seems still to need improving. And I don't konw which factors contribute this problem. It will be nice you can give me some advice. 
+The model was able to correctly guess 4 of the 6 traffic signs, which gives an accuracy of 66.7%. comparing with test result, it seems still to need improving. And I don't konw which factors contribute this problem. It would be nice you can give me some advice. 
 
 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the /////11th///// cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 20th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
+For the first image, the model is relatively sure that this is a Bumpy	road sign (probability of almost 1.0), and the image does contain a Bumpy	road sign. The top five soft max probabilities were
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.00000000e+00         			| 	22,Bumpy	road							| 
+| 1.29787023e-27    				| 28,Children	crossing   |
+| 4.53688143e-33					| 31,Wild	animals	crossing											|
+| 1.96769904e-37	      			| 20,Dangerous	curve	to	the	right			|
+| 2.09718608e-38				    | 25,Road	work      							|
 
+For the second image, the top five soft max probabilities were
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| 	18,General	caution							| 
+| 9.73418984e-11    				| 11,Right-of-way	at	the	next	intersection   |
+| 4.14415030e-11					| 40,Roundabout	mandatory											|
+| 1.49591017e-11      			| 27,Pedestrians			|
+| 1.52826764e-12				    | 5,Speed	limit	(80km/h)    							|
 
-For the second image, The top five soft max probabilities were
+For the thrid image, the top five soft max probabilities were
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 5.79330266e-01         			| 	23,Slippery	road						| 
+| 4.03478414e-01    				| 11,Right-of-way	at	the	next	intersection   |
+| 1.23237120e-02					| 20,Dangerous	curve	to	the	right										|
+| 2.78520002e-03      			| 30,Beware	of	ice/snow			|
+| 1.94263062e-03				    | 10,No	passing	for	vehicles	over	3.5	metric	tons    							|
+This image was classified by mistake, as you can see in list, our model was also not very sure which class to choose.
+
+For the fourth image, the top five soft max probabilities were
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| 	6,End	of	speed	limit	(80km/h)						| 
+| 2.46765097e-08    				| 4,Speed	limit	(70km/h)   |
+| 2.07055906e-09					| 1,Speed	limit	(30km/h)										|
+| 5.12363485e-10      			| 5,Speed	limit	(80km/h)			|
+| 6.86260038e-15				    | 2,Speed	limit	(50km/h)   							|
+This image was also classified by mistake, but unlike the thrid image, our model said it was sure this image is "End	of	speed	limit	(80km/h)", but unlucky, it are not. Another point should to be noticed, is the top five result are all about speed	limit, and this image is actul speed	limit. So it makes sense, even it mistakes.
+
+For the fifth image, the top five soft max probabilities were
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 6.28746271e-01         			| 	25,Road	work						| 
+| 1.53453305e-01    				| 21,Double	curve   |
+| 1.50383070e-01					| 31,Wild	animals	crossing										|
+| 4.30265777e-02      			| 29,Bicycles	crossing			|
+| 1.14517119e-02				    | 24,Road	narrows	on	the	right   							|
+
+14, 38, 34, 13, 20
+1.00000000e+00,   1.14233883e-11,   7.49400755e-21,
+          4.40621793e-23,   3.18760548e-25
+For the sixth image, the top five soft max probabilities were
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| 	14,Stop						| 
+| 1.14233883e-11    				| 36,Go	straight	or	right   |
+| 7.49400755e-21					| 34,Turn	left	ahead										|
+| 4.40621793e-23      			| 13,Yield			|
+| 3.18760548e-25				    | 20,Dangerous	curve	to	the	right   							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
