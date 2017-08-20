@@ -50,7 +50,7 @@ Here is an exploratory visualization of the data set. In the template there is a
 
 
 <div align=center>
-[alt text][image4]
+![alt text][image4]
 </div>
 <div align=center>![alt text][image5]</div>
 <div align=center>![alt text][image3]</div>
