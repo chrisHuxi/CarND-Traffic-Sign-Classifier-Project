@@ -108,8 +108,11 @@ Test a Model on New Images
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image6] ![alt text][image7] ![alt text][image8] 
-![alt text][image9] ![alt text][image10]
+![alt text][image6] 
+![alt text][image7] 
+![alt text][image8] 
+![alt text][image9] 
+![alt text][image10]
 
 The first image might be difficult to classify because ...
 
