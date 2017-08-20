@@ -15,11 +15,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image1]: ./write_up_image/gray.png "gray"
+[image2]: ./write_up_image/no-gray.png "no-gray"
+[image3]: ./write_up_image/test_dis.png "test_dis"
+[image4]: ./write_up_image/train_dis.png "train_dis"
+[image5]: ./write_up_image/valid_dis.png "valid_dis"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
@@ -48,8 +48,10 @@ signs data set, such as numpy.shape():
 
 Here is an exploratory visualization of the data set. In the template there is a bar chart, but in my view a pie chart is a better choice, because it can show how much percentage each class occupy more detailly. As you can see, nearly each class take up similar scale(1%-5%), there are no classes having especially more images. So I think it's not necessary to solve imbalance problem. It is similar for valid set and test set.
 
-#================这里要加三张图片===============#
-![alt text][image1]
+
+![alt text][image4]
+![alt text][image5]
+![alt text][image3]
 
 Design and Test a Model Architecture
 
