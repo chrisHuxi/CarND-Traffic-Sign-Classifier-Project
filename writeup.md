@@ -26,8 +26,8 @@ The goals / steps of this project are the following:
 [image9]: ./real_word_image/limit120.png "limit120"
 [image10]: ./real_word_image/road_work1.png "road_work"
 [image11]: ./real_word_image/stop1.png "stop"
-[image12]: ./write_up_image/filter.png "filter"
-[image13]: ./write_up_image/fliter2.png "filter2"
+[image12]: ./write_up_image/filter1.png "filter"
+[image13]: ./write_up_image/filter2.png "filter2"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
