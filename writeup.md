@@ -211,6 +211,6 @@ Let us look at visualized image of first and sencond convolutional layers'  filt
 ![alt text][image12]
 ![alt text][image13]
 
-From first convolutional layer we can know this model can capture shape characteristics. But second convolutional layer seems dosen't make sense. How can I analyze result like this?
+From first convolutional layer we can know this model can capture shape characteristics, but for number and letter can't be recognized, I think this point effect the final classification result. And second convolutional layer seems dosen't make sense, it seems to be some basic line like slash. How can I analyze result like this?
 
 
