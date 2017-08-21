@@ -26,6 +26,8 @@ The goals / steps of this project are the following:
 [image9]: ./real_word_image/limit120.png "limit120"
 [image10]: ./real_word_image/road_work1.png "road_work"
 [image11]: ./real_word_image/stop1.png "stop"
+[image12]: ./write_up_image/filter.png "filter"
+[image13]: ./write_up_image/filter2.png "filter2"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -204,7 +206,14 @@ For the sixth image, the top five soft max probabilities were
 | 4.40621793e-23      			| 13,Yield			|
 | 3.18760548e-25				    | 20,Dangerous	curve	to	the	right   							|
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+**(Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)**
+1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+
+Let us look at visualized image of first and sencond convolutional layers'  filter.
+
+![alt text][image12]
+![alt text][image13]
+
+From first convolutional layer we can know this model can capture shape characteristics. But second convolutional layer seems dosen't make sense. How can I analyze result like this?
 
 
