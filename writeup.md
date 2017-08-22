@@ -103,18 +103,23 @@ My final model results were:
 * test set accuracy of 0.927
 
 * What was the first architecture that was tried and why was it chosen?
+
 I choose LeNet as fundamental architecture.Because our task is similar to MNIST problem, both of them are classification on images.
 
 * What were some problems with the initial architecture?
+
 With LeNet I got validation accuracy 0.91, it's not bad but still needs improving.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 I noticed that our model got even 100% accuracy in train set, but valid accuracy is still lower then 0.93. It seems to be overfitting. So I apply dropout on convolutional layers, got higher validation accuracy.
 
 * Which parameters were tuned? How were they adjusted and why?
+
 I tuned number of epoch, first I found with 10 epoch our model can not be trained enough， so I try 20 epochs, 30 epochs and 35 epochs. Another parameters I tuned is dropout's keep_prob, first I use 0.5, then I found model is underfitting, that means not only the valid accuracy is low, but also train accuracy is not high. Then I adjust it to 0.7, 0.8 and 0.9. Finally got great result.
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 In my view, a convolution layer play a very important role in our model, first for our input image whos shape is (32,32), if we simple using fully connected neraul network the computational expense is really large. Convolutional layers' feature of weight sharing can solve this problem. Another point is that each image's pixel is related to their neighborhood, this feature is also suitable perfectly for CNN. Dropout is another important design choice, CNN is easy to be overfitting, and with dropout, our model has to learn more generalized feature.
  
  
